@@ -1,9 +1,10 @@
 package praktikum;
 
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+
+import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class BunTest {
@@ -40,10 +41,10 @@ public class BunTest {
     }
 
     private void assertName(Bun bun) {
-        Assert.assertEquals(name, bun.getName());
+        assertEquals(name, bun.getName());
     }
 
     private void assertPrice(Bun bun) {
-        Assert.assertEquals(price, bun.getPrice(), 0.01);
+        assertEquals(price, bun.getPrice(), 0.01);
     }
 }
