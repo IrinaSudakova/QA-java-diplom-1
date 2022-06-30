@@ -113,7 +113,6 @@ public class BurgerTest {
         when(ingredient3.getName()).thenReturn("котлета");
         when(burger.getPrice()).thenReturn(50.00f);
         // expected
-        System.out.println(burger.getReceipt());
         assertEquals("(==== " + bun.getName() + " ====)\n" +
                 "= " + ingredient1.getType().toString().toLowerCase() + " " + ingredient1.getName() + " =\n" +
                 "= " + ingredient2.getType().toString().toLowerCase() + " " + ingredient2.getName() + " =\n" +
